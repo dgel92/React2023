@@ -1,0 +1,38 @@
+.hero{
+    position: relative;
+    height: 100vh;
+
+    &_bg{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    &_content{
+        display:grid;
+        place-content: center;
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &_title{
+        font-size: clamp(3.4rem, 5vw, 5.75rem);
+        text-align: center;
+        line-height: 0.9;
+        color: $clr-blanco;
+        letter-spacing: .055em;
+        
+
+        span{
+            display:block;
+            font-size: 1.2em;
+            color: transparent;
+            -webkit-text-stroke: 2px $clr-blanco;
+            font-weight: 900;
+            letter-spacing: .075em;
+        }
+    }
+}
