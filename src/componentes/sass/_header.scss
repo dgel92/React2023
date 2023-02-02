@@ -1,34 +1,95 @@
 .brand{
+    font-size: 1.5rem;
+    font-weight: 600;
 
 }
 
 header{
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    border:2px solid red;
+    background:rgb(165, 82, 82);
 
     .nav_btn{
-        fill: $clr-blanco;
         background: rgb(255, 0, 0);
+        fill: $clr-blanco;
         display: block;
         width: 35px;
         cursor:pointer;
 
 
         &-close{
+            float: right;
+            margin: 2em 2em;
+            margin-top: 4.5rem;
+
+        }
+
+        &-open{
 
         }
     }
 
     nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        height: 100vh;
+        width: 60%;
+        background: rgba(0, 0, 0, 0.918);
+        
 
+
+        
         .menu{
-            li{
+            display:flex;
+            flex-flow: column nowrap;
+            gap: 2em;
+            margin-top: 20vh;
+            margin-left: 2em;
 
+
+            li{
+                color: $clr-blanco;
+                font-size: 3vh;
+                opacity: 0.8;
+                letter-spacing: 0.05 em;
+                
                 &.active{
+                    font-weight: 600;
+                    opacity: 1;
+
 
                 }
             }
 
             &:hover{
 
+            }
+            ul{
+                margin-top:-1rem;
+                margin-bottom: -9rem;
+            }
+        }
+    }
+
+    @media(min-width:700px){
+        .nav_btn{
+            display:none;
+        }
+
+        nav{
+            all:unset;
+
+            .menu{
+                display:flex;
+                flex-flow: row nowrap;
+                margin: unset;
+                gap: 1em;
             }
         }
     }
