@@ -14,7 +14,6 @@ header{
     background:rgb(165, 82, 82);
 
     .nav_btn{
-        background: rgb(255, 0, 0);
         fill: $clr-blanco;
         display: block;
         width: 35px;
@@ -23,8 +22,8 @@ header{
 
         &-close{
             float: right;
-            margin: 2em 2em;
-            margin-top: 4.5rem;
+            margin: 2.1em;
+            margin-top: 2.8rem;
 
         }
 
@@ -41,9 +40,12 @@ header{
         height: 100vh;
         width: 60%;
         background: rgba(0, 0, 0, 0.918);
-        
+        opacity:0.99;
+        display:none;
 
-
+        &.nav-open{
+            display:blocK;
+        }
         
         .menu{
             display:flex;
@@ -68,6 +70,8 @@ header{
             }
 
             &:hover{
+                text-decoration: 1px underline $clr-blanco;
+                text-underline-offset: 5px;
 
             }
             ul{
@@ -77,7 +81,11 @@ header{
         }
     }
 
-    @media(min-width:700px){
+.carrito{
+    font-size: .5em;
+}
+
+    @media(min-width:720px){
         .nav_btn{
             display:none;
         }
@@ -94,3 +102,5 @@ header{
         }
     }
 }
+
+//1hra

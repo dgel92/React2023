@@ -1,4 +1,4 @@
-import Header from "./componentes/header/Header"
+import Header from "../src/componentes/Navbar/header/Header"
 import Hero from "./componentes/hero/Hero.jsx";
 
 function App() {
