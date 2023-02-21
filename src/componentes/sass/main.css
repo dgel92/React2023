@@ -1,7 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Literata:ital,opsz,wght@0,7..72,200;0,7..72,300;0,7..72,500;1,7..72,200&display=swap");
+.encabezado {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
 .brand {
-  font-size: 1.5rem;
-  font-weight: 600;
+  width: 35vh;
+  margin-left: 4rem;
 }
 
 header {
@@ -15,9 +21,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2em;
-  border: 2px solid red;
-  background: #a55252;
+  padding: 0.7em;
+  padding-left: 4em;
+  padding-right: 4rem;
 }
 
 header .nav_btn {
@@ -63,7 +69,7 @@ header nav .menu {
 }
 
 header nav .menu li {
-  color: #f8f8f8;
+  color: #313131;
   font-size: 3vh;
   opacity: 0.8;
   letter-spacing: 0.05 em;
@@ -89,7 +95,7 @@ header .carrito {
   font-size: .5em;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 2000px) {
   header .nav_btn {
     display: none;
   }
